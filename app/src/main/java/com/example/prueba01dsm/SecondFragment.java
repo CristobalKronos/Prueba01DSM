@@ -5,6 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -45,7 +46,7 @@ public class SecondFragment extends Fragment {
         binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Previous
+                //Previous fragment
                 NavHostFragment.findNavController(SecondFragment.this)
                         .navigate(R.id.action_SecondFragment_to_FirstFragment);
             }
@@ -72,6 +73,7 @@ public class SecondFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 //Reproducir Canción
+                MediaPlayer mp=  MediaPlayer.create(this.getActivity(),R.raw.sound_long);
             }
         });
         binding.btnNavigate.setOnClickListener(new View.OnClickListener() {

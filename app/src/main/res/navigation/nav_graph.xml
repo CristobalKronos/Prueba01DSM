@@ -25,4 +25,8 @@
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/sqliteFragment"
+        android:name="com.example.conceptosmedios.SqliteFragment"
+        android:label="SqliteFragment" />
 </navigation>
