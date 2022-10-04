@@ -6,9 +6,66 @@
     tools:context=".sqlitefragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_Id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Código" />
+
+            <TextView
+                android:id="@+id/txt_Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descripción" />
+
+            <TextView
+                android:id="@+id/txt_Price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Precio" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_Register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrar Producto" />
+
+            <Button
+                android:id="@+id/btn_Search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buscar Producto" />
+
+            <Button
+                android:id="@+id/btn_Edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Editar Producto" />
+
+            <Button
+                android:id="@+id/btn_Delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eliminar Producto" />
+        </LinearLayout>
+
+    </LinearLayout>
 
 </FrameLayout>
