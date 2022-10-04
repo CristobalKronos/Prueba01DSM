@@ -14,6 +14,7 @@ import com.example.prueba01dsm.databinding.FragmentSecondBinding;
 public class SecondFragment extends Fragment {
 
     private FragmentSecondBinding binding;
+    private String mail, user, url;
 
     @Override
     public View onCreateView(

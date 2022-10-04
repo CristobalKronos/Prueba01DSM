@@ -16,6 +16,7 @@ public class FirstFragment extends Fragment {
 
     private FragmentFirstBinding binding;
     private Spinner animalSpinner;
+    private String animal, infoPerson, txtBox;
 
     @Override
     public View onCreateView(
@@ -43,8 +44,7 @@ public class FirstFragment extends Fragment {
             //Mostrar
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(FirstFragment.this)
-                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
+
             }
         });
     }
