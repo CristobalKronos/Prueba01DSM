@@ -33,18 +33,17 @@ public class FirstFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         binding.buttonFirst.setOnClickListener(new View.OnClickListener() {
-            //Next Fragment
             @Override
             public void onClick(View view) {
+                //Next Fragment
                 NavHostFragment.findNavController(FirstFragment.this)
                         .navigate(R.id.action_FirstFragment_to_SecondFragment);
             }
         });
         binding.button.setOnClickListener(new View.OnClickListener() {
-            //Mostrar
             @Override
             public void onClick(View view) {
-
+                //Mostrar ...
             }
         });
     }

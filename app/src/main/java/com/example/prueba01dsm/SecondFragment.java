@@ -45,14 +45,15 @@ public class SecondFragment extends Fragment {
         binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Previous
                 NavHostFragment.findNavController(SecondFragment.this)
                         .navigate(R.id.action_SecondFragment_to_FirstFragment);
             }
         });
         binding.button2.setOnClickListener(new View.OnClickListener() {
-            //Guardar
             @Override
             public void onClick(View view) {
+                //Guardar
                 setContentView(R.layout.activity_web);
                 wv1= (WebView) findViewById(R.id.wv1);
                 String url=getIntent().getStringExtra("url");
@@ -62,27 +63,21 @@ public class SecondFragment extends Fragment {
             }
         });
         binding.button3.setOnClickListener(new View.OnClickListener() {
-            //Buscar
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(SecondFragment.this)
-                        .navigate(R.id.action_SecondFragment_to_FirstFragment);
+                //Buscar
             }
         });
         binding.button4.setOnClickListener(new View.OnClickListener() {
-            //Reproducir Canción
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(SecondFragment.this)
-                        .navigate(R.id.action_SecondFragment_to_FirstFragment);
+                //Reproducir Canción
             }
         });
         binding.btnNavigate.setOnClickListener(new View.OnClickListener() {
-            //Navegar por URL
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(SecondFragment.this)
-                        .navigate(R.id.action_SecondFragment_to_FirstFragment);
+                //Navegar por URL
             }
         });
     }
