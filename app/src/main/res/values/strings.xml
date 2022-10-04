@@ -11,4 +11,6 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="basics_terms">Conceptos Básicos</string>
     <string name="shared_preferences">Shared Preferences + Sounds + Url Navigation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
